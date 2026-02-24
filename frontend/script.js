@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:5000/api/students";
-
+const API_URL = "https://student-management-h2wa.onrender.com/api/students";
 let editId = null;
 
 document.addEventListener("DOMContentLoaded", () => {
