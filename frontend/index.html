@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Student Course Registration</h1>
+
+        <div class="form-container">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="course" placeholder="Course Name">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="list-header">
+            <h2>Students List</h2>
+            <span id="studentCount"></span>
+        </div>
+
+        <div id="studentList"></div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

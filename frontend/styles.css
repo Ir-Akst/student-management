@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    min-width: 160px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #f6c23e;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #dda20a;
+}
+
+#studentList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.student-card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 0.4s ease-in;
+    position: relative;
+}
+
+.student-card p {
+    margin: 4px 0;
+}
+
+.student-card button {
+    margin-top: 8px;
+    background: #e74a3b;
+    color: white;
+}
+
+.student-card button:hover {
+    background: #c0392b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input {
+        width: 100%;
+    }
+}
